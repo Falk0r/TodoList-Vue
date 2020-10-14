@@ -1,8 +1,8 @@
 # todolist-vue ✅
 
-<div style="text-align: center;">
-<image src="https://github.com/Falk0r/TodoList-Vue/blob/main/src/assets/screenshot.png?raw=true" style="height: 400px;">
-</div>
+<p align="center">
+    <img src="https://github.com/Falk0r/TodoList-Vue/blob/main/src/assets/screenshot.png?raw=true" height="400">
+</p>
 
 ## Link to the project
 
@@ -19,9 +19,9 @@ This app is code in __Vue.js__ and __CSS__. This project help me to understand :
 
 ## Atomic Design
 
-<div style="text-align: center;">
-<image src="https://github.com/Falk0r/TodoList-Vue/blob/main/src/assets/plan.jpg?raw=true" style="height: 300px;">
-</div>
+<p align="center">
+    <img src="https://github.com/Falk0r/TodoList-Vue/blob/main/src/assets/plan.jpg?raw=true" height="400">
+</p>
 
 In this project, I cut the app in 3 main parts :
 1. Title
