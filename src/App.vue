@@ -1,23 +1,22 @@
 <template>
   <div id="app">
-    <TdForm />
+    <TodoList />
   </div>
 </template>
 
 <script>
-import TdForm from './components/TdForm'
+import TodoList from './components/TodoList';
 
 export default {
   name: 'App',
   components: {
-    TdForm,
+    TodoList,
   }
 }
 </script>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-
 *{
   margin: 0;
   padding: 0;
@@ -28,7 +27,6 @@ body{
   justify-content: center;
   background-color: black;
 }
-
 #app{
   width: 100%;
   max-width: 700px;
@@ -36,13 +34,15 @@ body{
   background-color: black;
 }
 ul{
+  display: flex;
+  flex-direction: column-reverse;
+  width: 90%;
   margin-top: 10px;
-  font-family: 'Permanent Marker', cursive;
+  font-size: 1.5rem;
+
 }
 h1{
   margin: 10px 0;
-  font-family: 'Permanent Marker', cursive;
+  color: antiquewhite ;
 }
-
-
 </style>

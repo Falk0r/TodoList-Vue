@@ -9,9 +9,9 @@
 
 <script>
 export default {
-    name: 'TdListButtonSupp',
+    name: 'TodoListButtonDelete',
     props:{
-        taskIndex: Number,
+        taskIndex: Number
     },
     methods:{
         sendDone(){
@@ -34,5 +34,7 @@ export default {
     background-color: green;
     color: whitesmoke;
 }
-
+.done:focus{
+    outline-color: green;
+}
 </style>

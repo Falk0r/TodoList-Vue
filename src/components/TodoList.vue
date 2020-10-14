@@ -1,22 +1,22 @@
 <template>
   <div class="template">
     <h1>Todo List</h1>
-    <TdInput 
-      v-on:receiveTask="onTaskAdd"
+    <TodoListInput 
+      @receiveTask="onTaskAdd"
     />
-    <TdList :taskList="taskList"/>
+    <TodoListTasks :task-list="taskList"/>
   </div>
 </template>
 
 <script>
-import TdInput from './TdInput'
-import TdList from './TdList'
+import TodoListInput from './TodoListInput'
+import TodoListTasks from './TodoListTasks'
 
 export default {
-    name: 'TdForm',
+    name: 'TodoList',
     components: {
-      TdInput,
-      TdList,
+      TodoListInput,
+      TodoListTasks,
     },
     data () {
         return {
@@ -33,14 +33,10 @@ export default {
 
 <style scoped>
 .template{
-    height: 100%;
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%;
+    width: 100%;
 }
-h1{
-  color: antiquewhite ;
-}
-
 </style>

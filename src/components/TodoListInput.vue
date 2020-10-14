@@ -2,14 +2,15 @@
     <input
         type="text"
         v-model="taskToAdd"
-        v-on:keyup.enter="sendTask"  
+        @keyup.enter="sendTask"  
         placeholder="ajouter une tâche"
+        class="addTask"
     >
 </template>
 
 <script>
 export default {
-    name: 'TdInput',
+    name: 'TodoListInput',
     data () {
         return {
             taskToAdd: '',
@@ -25,10 +26,9 @@ export default {
 </script>
 
 <style scoped>
-input{
+.addTask{
     height: 2rem;
     width: 90%;
     font-size: 1.5rem;
 }
-
 </style>
