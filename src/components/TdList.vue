@@ -1,13 +1,13 @@
 <template>
-    <ul>
-        <li v-for="(task, index) in taskList" :key="index">
-            {{task}}
-            <TdListButtonSupp 
-                :taskIndex="index"
-                v-on:taskDone="deleteTask"
-            />
-        </li>
-    </ul>
+        <transition-group name='task-list' tag="ul">
+            <li v-for="(task, index) in taskList" v-bind:key="task" class="task-list-item">
+                {{task}}
+                <TdListButtonSupp 
+                    :taskIndex="index"
+                    v-on:taskDone="deleteTask"
+                />
+            </li>
+        </transition-group>
 </template>
 
 <script>
@@ -23,7 +23,6 @@ export default {
     },
     methods:{
         deleteTask(id){
-            console.log("id de la tache : " + id);
             this.taskList.splice(id, 1);
         }
     }
@@ -32,15 +31,24 @@ export default {
 
 <style scoped>
 ul{
-    background-color: white;
     width: 90%;
     font-size: 1.5rem;
+    display: flex;
+    flex-direction: column-reverse;
 }
-li{
-    padding: 10px;
+.task-list-item{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+    margin: 10px 0;
+}
+.task-list-item{
+    transition: all 1s ease;
+}
+ .task-list-leave-to{
+    opacity: 0;
 }
 
 </style>
