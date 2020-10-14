@@ -3,6 +3,7 @@
         type="text"
         v-model="taskToAdd"
         v-on:keyup.enter="sendTask"  
+        placeholder="ajouter une tâche"
     >
 </template>
 

@@ -25,7 +25,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Pass data to a child component
 
-### Pass data from child to parent
 To pass data to a parent, we need to use event. $emit() method. The first parameter of $emit is the event that should be listened for in the parent component. The second (optional) parameter is the data value to pass.
 
 #### For exemple in this project :
@@ -45,13 +44,15 @@ Went the event is listenning, it call the method "onTaskAdd" in the parent __For
         }
     },
     methods: {
-      onTaskAdd (value){
-          console.log(value);
+        onTaskAdd (value){
+            console.log(value);
           this.taskList.push(value);
       }
     }
 ```
 This method update the taskList.
+
+### Pass data from child to parent
 
 In the child __input__, we create a model to link the data from the input.
 ```html

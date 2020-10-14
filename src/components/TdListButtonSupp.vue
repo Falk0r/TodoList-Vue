@@ -30,5 +30,9 @@ export default {
     border: none;
     border-radius: 5%;
 }
+.done:hover{
+    background-color: green;
+    color: whitesmoke;
+}
 
 </style>
