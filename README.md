@@ -1,10 +1,10 @@
-# todolist-vue ✅
+<h1 align="center">✅ TodoList-vue ✅</h1>
 
 <p align="center">
     <img src="https://github.com/Falk0r/TodoList-Vue/blob/main/src/assets/screenshot.png?raw=true" height="400">
 </p>
 
-## Link to the project
+<h2 align="center">Link to the project</h2>
 
 >[>>TodoList-vue](https://todolist-vue.onrender.com/)
 
@@ -17,7 +17,7 @@ This app is code in __Vue.js__ and __CSS__. This project help me to understand :
 * Create a full app with components
 * Structure an app using __Atomic Design__ that I've seen one day before code this one and I would like to make in practice
 
-## Atomic Design
+<h2 align="center">Atomic Design</h2>
 
 <p align="center">
     <img src="https://github.com/Falk0r/TodoList-Vue/blob/main/src/assets/plan.jpg?raw=true" height="400">
@@ -27,12 +27,12 @@ In this project, I cut the app in 3 main parts :
 1. Title
 2. Input to add a task
 3. List of tasks
-    1. task (need to update a make a components)
+    1. task (need to update to make a components)
     2. button to delete task
 
-## Keys point
+<h2 align="center">Keys point</h2>
 
-### Pass data to a child component
+## Pass data to a child component
 
 To pass data to a parent, we need to use event. $emit() method. The first parameter of $emit is the event that should be listened for in the parent component. The second (optional) parameter is the data value to pass.
 
@@ -61,7 +61,7 @@ Went the event is listenning, it call the method "onTaskAdd" in the parent __For
 ```
 This method update the taskList.
 
-### Pass data from child to parent
+## Pass data from child to parent
 
 In the child __input__, we create a model to link the data from the input.
 ```html
