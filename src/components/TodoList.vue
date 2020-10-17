@@ -1,5 +1,6 @@
 <template>
   <div class="template">
+    <TodoListNav />
     <h1>Todo List</h1>
     <TodoListInput 
       @receiveTask="onTaskAdd"
@@ -11,16 +12,19 @@
 <script>
 import TodoListInput from './TodoListInput'
 import TodoListTasks from './TodoListTasks'
+import TodoListNav from './TodoListNav'
 
 export default {
     name: 'TodoList',
     components: {
       TodoListInput,
       TodoListTasks,
+      TodoListNav,
     },
     data () {
         return {
             taskList: [],
+            user: this.$auth.user,
         }
     },
     methods: {
