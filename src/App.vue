@@ -1,48 +1,32 @@
 <template>
   <div id="app">
-    <TodoList />
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
+    </div>
+    <router-view/>
   </div>
 </template>
 
-<script>
-import TodoList from './components/TodoList';
-
-export default {
-  name: 'App',
-  components: {
-    TodoList,
-  }
-}
-</script>
-
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  font-family: 'Permanent Marker', cursive;
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
 }
-body{
-  display: flex;
-  justify-content: center;
-  background-color: black;
-}
-#app{
-  width: 100%;
-  max-width: 700px;
-  min-height: 100vh;
-  background-color: black;
-}
-ul{
-  display: flex;
-  flex-direction: column-reverse;
-  width: 90%;
-  margin-top: 10px;
-  font-size: 1.5rem;
 
+#nav {
+  padding: 30px;
 }
-h1{
-  margin: 10px 0;
-  color: antiquewhite ;
+
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+#nav a.router-link-exact-active {
+  color: #42b983;
 }
 </style>
