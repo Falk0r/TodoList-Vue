@@ -29,4 +29,31 @@
 #nav a.router-link-exact-active {
   color: #42b983;
 }
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Permanent Marker', cursive;
+}
+body{
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+#app{
+  width: 100%;
+  max-width: 700px;
+  min-height: 100vh;
+  background-color: black;
+}
+ul{
+  display: flex;
+  flex-direction: column-reverse;
+  width: 90%;
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+h1{
+  margin: 10px 0;
+  color: antiquewhite ;
+}
 </style>
