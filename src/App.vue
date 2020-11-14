@@ -15,7 +15,12 @@ export default {
   },
   mounted: function () {
     axios
-      .get('https://kaamelott.chaudie.re/api/random/personnage/arthur')
+      .get('https://kaamelott.chaudie.re/api/random/personnage/arthur', {
+        headers: {
+          'Access-Control-Allow-Origin' : '*',
+          'crossorigin': 'true',
+        }
+      })
       .then(response => {
         console.log(response)
       })
