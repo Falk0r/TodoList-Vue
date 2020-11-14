@@ -16,6 +16,8 @@ export default {
   mounted: function () {
     axios
       .get('https://kaamelott.chaudie.re/api/random/personnage/arthur', {
+        baseURL: "https://kaamelott.chaudie.re/",
+        withCredentials: false,
         headers: {
           'Access-Control-Allow-Origin' : '*',
           'crossorigin': 'true',
