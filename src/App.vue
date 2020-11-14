@@ -6,11 +6,19 @@
 
 <script>
 import TodoList from './components/TodoList';
+import axios from 'axios';
 
 export default {
   name: 'App',
   components: {
     TodoList,
+  },
+  mounted: function () {
+    axios
+      .get('https://kaamelott.chaudie.re/api/random/personnage/arthur')
+      .then(response => {
+        console.log(response)
+      })
   }
 }
 </script>
