@@ -17,9 +17,6 @@ export default {
     axios
       .get('https://kaamelott.chaudie.re/api/random/personnage/arthur', {
         withCredentials: true,
-        headers: {
-          'Access-Control-Allow-Origin' : '*'
-        }
       })
       .then(response => {
         console.log(response)
