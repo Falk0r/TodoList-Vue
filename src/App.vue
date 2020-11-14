@@ -15,9 +15,7 @@ export default {
   },
   mounted: function () {
     axios
-      .get('https://kaamelott.chaudie.re/api/random/personnage/arthur', {
-        withCredentials: true,
-      })
+      .get('https://kaamelott.chaudie.re/api/random/personnage/arthur')
       .then(response => {
         console.log(response)
       })
